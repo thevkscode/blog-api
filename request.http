@@ -1,0 +1,32 @@
+### create a blog 
+
+Post http://localhost:3000/api/posts/create
+content-type: application/json
+
+{
+    "title": "first post",
+
+    "content": "first post content"
+}
+
+### fetch all blogs
+
+Get http://localhost:3000/api/posts/fetch
+
+
+### fetch a post by id
+
+Get http://localhost:3000/api/posts/fetch/1696312118635
+
+###update a post by id
+
+Put http://localhost:3000/api/posts/update/1696312118635
+content-type:application/json
+
+{
+    "title": "first post update 1",
+    "content": "content of first post updated 1"
+}
+
+### delete a post by id
+Delete http://localhost:3000/api/posts/delete/1696312118635
